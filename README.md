@@ -15,7 +15,7 @@ Atmega328 @ 16MHz |      X       |             |            |
 Atmega328 @ 12MHz |      X       |             |            | 
 Atmega32u4 @ 16MHz |      X       |             |            | 
 Atmega32u4 @ 8MHz |      X       |             |            | 
-ESP8266           |             |             |     X       | 
+ESP8266           |      X       |             |            | Use this SoftwareSerial library: https://github.com/plerup/espsoftwareserial
 Atmega2560 @ 16MHz |      X       |             |            | 
 ATSAM3X8E         |             |             |     X       | 
 ATSAM21D          |             |             |     X       | 
