@@ -1,8 +1,15 @@
-#include <SoftwareSerial.h>
+#include "Arduino.h"
 
+#if defined(ARDUINO_ARCH_SAMD) || defined(__SAM3X8E__)
+  // use pin 18 with Due, pin 1 with Zero or M0 Pro 
+  #define lcd Serial1 
+#else
+  #include <SoftwareSerial.h>
+  // Create a software serial port!
+  SoftwareSerial lcd = SoftwareSerial(0,2);
+#endif
 
-// Create a software serial port!
-SoftwareSerial lcd = SoftwareSerial(0,2); 
+// for ESP8266 use this SoftwareSerial library: https://github.com/plerup/espsoftwareserial
 
 void setup() {
   lcd.begin(9600);  
