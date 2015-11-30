@@ -17,8 +17,8 @@ Atmega32u4 @ 16MHz |      X       |             |            |
 Atmega32u4 @ 8MHz |      X       |             |            | 
 ESP8266           |      X       |             |            | Use this SoftwareSerial library: https://github.com/plerup/espsoftwareserial
 Atmega2560 @ 16MHz |      X       |             |            | 
-ATSAM3X8E         |             |             |     X       | 
-ATSAM21D          |             |             |     X       | 
+ATSAM3X8E         |      X       |             |            | Use pin 18 for data.
+ATSAM21D          |      X       |             |            | Use pin 1 for data.
 ATtiny85 @ 16MHz  |      X       |             |            | run at 8MHz.
 ATtiny85 @ 8M     |      X       |             |            | 
 
